@@ -1,0 +1,3 @@
+steps:
+  - name: gcr.io/cloud-builders/gsutil
+    args: ["-m", "rsync", "-r", "-c", "-x", ".git|.*yaml$", "-d", "./public", "gs://www.jasonyangdev.com"]
